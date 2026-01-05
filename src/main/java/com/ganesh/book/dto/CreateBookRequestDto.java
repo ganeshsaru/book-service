@@ -2,19 +2,10 @@ package com.ganesh.book.dto;
 
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.Size;
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.Data;
 
-@Getter
-@Setter
-@AllArgsConstructor
-@NoArgsConstructor
-public class BookDto {
-    @NotBlank
-    private Long id;
-
+@Data
+public class CreateBookRequestDto implements BookRequest{
     @NotBlank
     @Size(min = 3, max = 100)
     private String title;

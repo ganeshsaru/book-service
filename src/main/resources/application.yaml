@@ -16,3 +16,13 @@ spring:
     hibernate:
       ddl-auto: none
 
+server:
+  servlet:
+    context-path: /api
+
+springdoc:
+  swagger-ui:
+    path: /swagger-ui.html
+
+  api-docs:
+    path: /v1/api-docs
