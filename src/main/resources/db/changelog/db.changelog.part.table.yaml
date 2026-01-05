@@ -1,4 +1,4 @@
 databaseChangeLog:
   - include:
-      file: db.changelog.part.table.yaml
+      file: /table/book.sql
       relativeToChangelogFile: true
